@@ -1,0 +1,95 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    width: 150px;
+    height: 120px;
+    padding: 10px;
+    font-family: vt323;
+    color: #26d840;
+}
+body {
+    background-color: black;
+}
+h1 {
+    text-align: center;
+}
+label {
+    font-size: 25px;
+}
+
+input[id="firstName"] {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #26d840;
+    background-color: black;
+    color: white;
+    font-family: vt323;
+    font-size: 15px;
+}
+input[id="lastName"] {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #26d840;
+    background-color: black;
+    color: white;
+    font-family: vt323;
+    font-size: 15px;
+}
+input[id="email"] {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #26d840;
+    background-color: black;
+    color: white;
+    font-family: vt323;
+    font-size: 15px;
+}
+input[id="password"] {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #26d840;
+    background-color: black;
+    color: white;
+    font-family: vt323;
+    font-size: 15px;
+}
+span {
+    position: relative;
+    left: 45px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button{
+    background-color:black;
+    box-sizing: border-box;
+    border-color: #26d840;
+    color:#26d840;
+    font-family: vt323;
+    font-size: 20px;
+    width:100%;
+    margin: 13px 0;
+}
+button:hover{
+    color:#d927bf;
+}
+.loginSpan{
+    left:0px;
+}
