@@ -1,0 +1,167 @@
+body {
+    font-family: vt323;
+    font-weight: 900;
+    font-size: 168px;
+    color: #26d840;
+    background-color: black;
+    flex-direction: column;
+    display: flex;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #26d840;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #009900;
+}
+.marqueeWrap {
+    border: 2px solid white;
+    border-left-style: none;
+    border-right-style: none;
+}
+.marquee {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    overflow: auto;
+    gap: 1rem;
+    position: relative;
+    user-select: none;
+}
+.tot {
+    flex-direction: column;
+    display: flex;
+    padding: 15px;
+    row-gap: 15px;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    font-size: 144px;
+    flex: 50%;
+    row-gap: 15px;
+}
+.now {
+    background-color: white;
+    border-radius: 15px;
+    flex: 40%;
+    padding: 5px;
+}
+.temphumi {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    column-gap: 10px;
+}
+.datepress {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 15px;
+}
+
+.tempBox {
+    background-color: black;
+    border-radius: 15px;
+    flex: 60%;
+    padding: 10px;
+}
+.humiBox {
+    float: right;
+    border-radius: 15px;
+    background-color: black;
+    flex: 40%;
+    padding: 10px;
+}
+.pressBox {
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px;
+}
+.date {
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px;
+}
+.time {
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px;
+}
+.unitHumi {
+    bottom: 100%;
+    float: right;
+}
+.unitTemp {
+    float: right;
+}
+.alert {
+    background-color: white;
+    border-radius: 15px;
+    flex: 60%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.container-fluid {
+    background-color: black;
+    position: absolute;
+    margin: auto;
+    height: 95%;
+    width: 95%;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.table {
+    padding: 10px;
+    font-size: 40px;
+    width: 100%;
+    text-align: left;
+}
+.tableAlert{
+    width:100%;
+}
+.chartBase {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    flex: 50%;
+}
+.chartFilm {
+    border-radius: 15px;
+    padding: 15px;
+    background-color: black;
+}
+.chartCont {
+    background-color: black;
+}
+input[type="submit"]{
+  width: 100%;
+  border-style:none;
+  background-color: red;
+  color: black;
+  font-family: vt323;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius:10px;
+}
+
+
+
