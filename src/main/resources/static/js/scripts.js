@@ -1,7 +1,7 @@
 var asseXValue = [], asseY1Value=[], asseY2Value=[];
 
 async function getDataAlerty(){
-    const apiUrl="http://localhost:8080/main"
+    const apiUrl="/main"
     const response = await fetch(apiUrl)
     const barChartData= await response.json()
 
