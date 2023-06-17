@@ -17,6 +17,9 @@
       </div>
 
       <form th:action="@{/registration}" method="post" th:object="${user}">
+        <div th:if="${param.error}">
+          <div class="alert alert-danger">Error during registration</div>
+        </div>
         <div class="form-group">
           <label class="control-label" for="firstName"> FIRST NAME</label>
           <input id="firstName" class="form-control" th:field="*{firstName}" required autofocus="autofocus" />

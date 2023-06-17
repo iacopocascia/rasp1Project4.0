@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
+
 
 @Controller
 @RequestMapping("/registration")
@@ -32,8 +35,14 @@ public class UserRegistrationController {
 
     @PostMapping()
     public String registerUserAccount(@ModelAttribute("user") UserRegistrationDto registrationDto) {
-        userService.save(registrationDto);
-        System.out.println("CREDENTIALS= "+registrationDto.getFirstName()+" "+registrationDto.getLastName()+" "+registrationDto.getEmail()+" "+registrationDto.getPassword());
-        return "redirect:/registration?success";
+
+            userService.save(registrationDto);
+            System.out.println("CREDENTIALS= " + registrationDto.getFirstName() + " " + registrationDto.getLastName() + " " + registrationDto.getEmail() + " " + registrationDto.getPassword());
+            return "redirect:/registration?success";
     }
+    @ExceptionHandler({SQLException.class, SQLIntegrityConstraintViolationException.class})
+    public String dbError(){
+        return "redirect:/registration?error";
+    }
+
 }

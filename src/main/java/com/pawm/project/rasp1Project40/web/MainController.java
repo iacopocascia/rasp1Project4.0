@@ -5,26 +5,27 @@ import com.pawm.project.rasp1Project40.model.raspModel;
 import com.pawm.project.rasp1Project40.repository.raspRepo;
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class MainController {
+public class MainController implements ErrorController {
 
     @Autowired
     private raspRepo repo;
 
     @GetMapping("/login")
-
     public String login() {
 
         return "login.html";
     }
 
     @GetMapping("/")
-
     public String getLast(Model model){
 
         Iterable<raspModel> last;
@@ -44,4 +45,5 @@ public class MainController {
         data.put("data",repo.fetchAll());
         return data;
     }
+
 }
